@@ -25,6 +25,9 @@
     --color: #024e74;
     --colorS: #022f50;
     --colorw:#afe9fd;
+    --colorM: #741302;
+    --colorSM: #500202;
+    --colorWM:#fdafaf;
 }
  /*Pagina*/
 
@@ -47,12 +50,12 @@
 ::-webkit-scrollbar-thumb{
   width: 15px;
   border-radius: 20px;
-  background-color: var(--color);
+  background-color: var(--colorW);
 }
 
 /*Header*/
 
-.header, .footer{
+.header, .footer, .headerM, .footerM{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,6 +67,11 @@
     overflow: hidden;
 
     background-color: var(--colorw);
+}
+
+.headerM, .footerM{
+  background-color: var(--colorWM);
+
 }
 
 .logo{
@@ -195,6 +203,7 @@
     padding-left: 0.5em;
     padding-right: 5px;
     background-color: var(--colorw);
+    overflow-y: hidden;
 
     
   }
@@ -302,8 +311,7 @@
     flex-direction: row;
     align-items: center;
     
-    padding-left: 10em;
-    
+    transform: translateX(12vw);
     
     margin-bottom: 20px;
     
@@ -320,8 +328,7 @@
     text-align: left;
     border-radius: 20px;
     
-    margin-right: 2%;
-    margin-left: 8.2rem;
+    margin-left: 9rem;
 
     background-color: var(--colorw);
 
@@ -331,12 +338,12 @@
 
   @keyframes slidein {
     from {
-      margin-left: 100rem;
+      transform:translateX(450vw);
 
     }
   
     to {
-      margin-left: 8.1rem;
+      transform:translateX(0vw);
     }
   }
 
@@ -389,7 +396,77 @@
 .linkZap:hover{
 
     background-color: #21ff21 ;
+  }
+
+/*Mind Card*/
+
+.conteinerM, .conteinerM2{
+
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  padding: auto;
+  display: flex;
+  background-color: #000000;
+  background:linear-gradient(75deg,#ffffff 0%, #1d1d1d 10%,#161616 15%, #000000 100%);
 }
+
+.conteinerM2{
+  background:linear-gradient(76deg,#ff0000 0%, #c72424 80%, #ffffff 100%);
+}
+
+.telas{
+  transform:translateX(73.6vw);
+  width: 25vw;
+  animation-duration: 1.8s;
+  animation-name: esqueda;
+
+}
+
+@keyframes esqueda {
+  from {
+    transform:translateX(450vw);
+
+  }
+
+  to {
+    transform:translateX(73.6vw);
+  }
+}
+
+
+.telas2{
+  
+  width: 25vw;
+  animation-duration: 1.8s;
+  animation-name: direita;
+  transform:translateX(-1.1vw);
+  
+}
+
+@keyframes direita {
+  from {
+    transform:translateX(-450vw);
+
+  }
+
+  to {
+    transform:translateX(-1.1vw);
+  }
+}
+
+.TituloM, .TituloM2{
+  color: #ff0000;
+  position: relative;
+  transform: translateX(105vh);
+  bottom: 23vh;
+}
+
+.TituloM2{
+  color: #000000;
+}
+
+/*Outras telas*/
 
 @media(max-width: 500px){
 

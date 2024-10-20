@@ -43,3 +43,13 @@ class MobileNavbar {
   );
   mobileNavbar.init();
   
+
+  bloco1 = document.getElementById('bloco1');
+  bloco2 = document.getElementById('bloco2');
+  bloco3 = document.getElementById('bloco3');
+
+  function startA(){
+    bloco1.style.animationPlayState = 'running';
+    bloco2.style.animationPlayState = 'running';
+    bloco3.style.animationPlayState = 'running';
+  }

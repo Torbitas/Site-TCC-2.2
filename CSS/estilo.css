@@ -209,7 +209,7 @@
   }
   
   .bloco img{
-    width: 100%;
+    width: 75%;
     border-radius: 2em;
   }
   
@@ -217,6 +217,43 @@
     margin-bottom: 1.5em;
     font-size: 1em;
   }
+
+  .linkAppSite{
+    background-color: var(--colorWM);
+    border:1px var(--colorM) solid ;
+    border-radius: 17px;
+    width: 15vw;
+    height: 10vh;
+    transition: 0.5s;
+    animation-duration: 0.7s;
+    animation-name: continuos;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: paused;
+    
+  }
+
+  .linkAppSite:hover{
+    width: 16vw;
+    height: 11vh;
+    animation-play-state: running;
+  }
+
+  .linkAppSite a{
+    text-decoration: none;
+    color: var(--colorSM);
+  }
+
+  @keyframes continuos {
+    from {
+      background-color: var(--colorWM);
+    }
+  
+    to {
+      background-color: var(--colorw)
+    }
+  }
+
   
   /*Carrossel*/
   
@@ -310,11 +347,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     
-    transform: translateX(12vw);
+    padding-left: 10vw;
     
     margin-bottom: 20px;
-    
+
   }
   
   .blocosA{
@@ -332,9 +370,14 @@
 
     background-color: var(--colorw);
 
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-name: slidein;
+    animation-play-state: paused;
+
+    padding: 5px;
+
   } 
+
 
   @keyframes slidein {
     from {
@@ -403,6 +446,9 @@
 .conteinerM, .conteinerM2{
 
   overflow: hidden;
+  text-align: center;
+  align-items: center;
+  color: #c72424;
   width: 100%;
   height: 50vh;
   padding: auto;
@@ -413,15 +459,25 @@
 
 .conteinerM2{
   background:linear-gradient(76deg,#ff0000 0%, #c72424 80%, #ffffff 100%);
+  color: #000;
 }
 
-.telas{
-  transform:translateX(73.6vw);
-  width: 25vw;
+
+
+.telas, .logT{
+  width: 14vw;
+  float: right;
   animation-duration: 1.8s;
   animation-name: esqueda;
+  margin-left: 14.9vw;
+  
 
 }
+.logT{
+  width: 25vw;
+  margin-left: 12vw;
+}
+
 
 @keyframes esqueda {
   from {
@@ -430,17 +486,16 @@
   }
 
   to {
-    transform:translateX(73.6vw);
+    transform:translateX(0vw);
   }
 }
 
 
 .telas2{
   
-  width: 25vw;
+  width: 14vw;
   animation-duration: 1.8s;
   animation-name: direita;
-  transform:translateX(-1.1vw);
   
 }
 
@@ -451,20 +506,44 @@
   }
 
   to {
-    transform:translateX(-1.1vw);
+    transform:translateX(0vw);
   }
 }
 
 .TituloM, .TituloM2{
   color: #ff0000;
-  position: relative;
-  transform: translateX(105vh);
   bottom: 23vh;
+  letter-spacing:5px;
 }
+
 
 .TituloM2{
   color: #000000;
 }
+
+.TituTex{
+  margin-left: 40.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.TituTex li{
+
+margin-right: 40px;
+
+}
+
+.TituTex2{
+  margin-left: 24vw;
+  flex-direction: column;
+}
+.TituTex2 li{
+
+  margin-right: 40px;
+  
+  }
 
 /*Outras telas*/
 
@@ -480,6 +559,10 @@
     width:40vw;
     margin-right: 10vw;
     
+  }
+  .linkAppSite{
+    width: 35vw;
+    height: 4vh;
   }
   
   .blocosA{

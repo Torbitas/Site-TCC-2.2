@@ -70,7 +70,7 @@
 }
 
 .headerM, .footerM{
-  background-color: var(--colorWM);
+  background-color: #e2e2e2;
   border-bottom:#000 solid 2px;
 
 }
@@ -220,17 +220,28 @@
   }
 
   .linkAppSite{
-    background-color: var(--colorWM);
-    border:1px var(--colorM) solid ;
+    background: linear-gradient(
+      90deg,
+      #20b2aa,
+      #008b8b,
+      #87ceeb,
+      #00bfff,
+      #1e90ff,
+      #6495ed,
+      #0709af
+    );
+    background-size:300% 300% ;
+    color: #00ff62;
+    border:1px #000 solid ;
     border-radius: 17px;
     width: 15vw;
     height: 10vh;
-    transition: 0.5s;
-    animation-duration: 0.7s;
+    animation-duration: 5s;
     animation-name: continuos;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-play-state: paused;
+    animation-fill-mode:both;
     
   }
 
@@ -242,16 +253,21 @@
 
   .linkAppSite a{
     text-decoration: none;
-    color: var(--colorSM);
+    text-shadow: #000;
+    color: #ff0000;
+    mix-blend-mode:multiply
   }
 
   @keyframes continuos {
-    from {
-      background-color: var(--colorWM);
+    0% {
+      background-position:0% 0%;
     }
   
-    to {
-      background-color: var(--colorw)
+    50% {
+      background-position:50% 0%;
+    }
+    100%{
+      background-position:100% 0%;
     }
   }
 
@@ -458,9 +474,17 @@
   background:linear-gradient(75deg,#ffffff 0%, #1d1d1d 10%,#161616 15%, #000000 100%);
 }
 
+.app{
+  border: #c72424 2px solid;
+}
+
+.app:hover{
+  background-color: #c72424;
+}
+
+
 .conteinerM2{
-  background:linear-gradient(76deg,#ff0000 0%, #c72424 80%, #ffffff 100%);
-  color: #000;
+  background:linear-gradient(76deg,#000000 0%, #161616 80%, #ffffff 100%);
 }
 
 
@@ -518,9 +542,6 @@
 }
 
 
-.TituloM2{
-  color: #000000;
-}
 
 .TituTex{
   margin-left: 32.6em;

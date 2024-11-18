@@ -48,9 +48,8 @@
   
 }
 ::-webkit-scrollbar-thumb{
-  width: 15px;
-  border-radius: 20px;
-  background-color: var(--colorW);
+  background-color: #024e74;
+  border-radius:50px ;
 }
 
 /*Header*/
@@ -70,10 +69,26 @@
 }
 
 .headerM, .footerM{
-  background-color: #e2e2e2;
-  border-bottom:#000 solid 2px;
-
+  background-color: #e1e1e1;
+  border-bottom:#ff0000 solid 6px;
+  animation-duration: 1.2s;
+  animation-name: iris;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  
 }
+
+.footerM{
+  border-bottom:none;
+  border-top:#ff0000 6px solid;
+}
+
+@keyframes iris{
+  from{border-color: #00bfff;}
+
+  to{border-color: #ff0000;}
+}
+
 
 .logo{
     width: 11%;
@@ -284,6 +299,7 @@
     
     > div {
       flex: 1 100 120px;
+
       border-radius: 0.5rem;
       transition: 0.5s ease-in-out;
       cursor: pointer;
@@ -460,6 +476,13 @@
 
 /*Mind Card*/
 
+.logoh{
+  width:15%;
+  align-items: center;
+  position: relative;
+  left: 20vw;
+}
+
 .conteinerM, .conteinerM2{
 
   overflow: hidden;
@@ -471,11 +494,12 @@
   padding: auto;
   display: flex;
   background-color: #000000;
-  background:linear-gradient(75deg,#ffffff 0%, #1d1d1d 10%,#161616 15%, #000000 100%);
 }
 
 .app{
   border: #c72424 2px solid;
+  position: relative;
+  left: 9vw;
 }
 
 .app:hover{
@@ -484,14 +508,16 @@
 
 
 .conteinerM2{
-  background:linear-gradient(76deg,#000000 0%, #161616 80%, #ffffff 100%);
+  background:#cbcbcb;
 }
 
 
 
 .telas, .logT{
-  width: 14vw;
+  width: 28vw;
   float: right;
+  position: relative;
+  left:5vw;
   animation-duration: 1.8s;
   animation-name: esqueda;
   margin-left: 30vw;
@@ -499,8 +525,8 @@
 
 }
 .logT{
-  width: 25vw;
-  margin-left: 12vw;
+  width: 25rem;
+  margin-left: 29vw;
 }
 
 
@@ -518,7 +544,9 @@
 
 .telas2{
   
-  width: 14vw;
+  width: 28vw;
+  position: relative;
+  left: 14vw;
   animation-duration: 1.8s;
   animation-name: direita;
   
@@ -536,6 +564,7 @@
 }
 
 .TituloM, .TituloM2{
+  font-size: 30px;
   color: #ff0000;
   bottom: 23vh;
   letter-spacing:5px;
@@ -544,7 +573,8 @@
 
 
 .TituTex{
-  margin-left: 32.6em;
+  position: relative;
+  left: 19em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -680,7 +710,7 @@ margin-right: 40px;
     display: none;
   }
 
-  .logo{
+  .logo, .logoh{
     width:35%;
     align-items: center;
     margin-left:35%

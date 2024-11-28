@@ -81,6 +81,48 @@
 .footerM{
   border-bottom:none;
   border-top:#ff0000 6px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerM img{
+  z-index: 2;
+  border: 5px solid black;
+  border-radius: 50px;
+  position: relative;
+  left: -2vw;
+  bottom: 2vh;
+  align-items: center;
+  background-color: #e1e1e1;
+  
+}
+
+.passa{
+  z-index: 1;
+  width: 250%;
+  height: 5vh;
+  position: relative;
+  top: 5vw;
+  border-bottom-left-radius:50px ;
+
+  background: linear-gradient(
+    90deg,
+    #b22020,
+    #8b0000,
+    #eb8787,
+    #ff0000,
+    #ff1e1e,
+    #ed6464,
+    #af0707
+  );
+  animation-duration: 5s;
+  animation-name: linha;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes linha {
+
 }
 
 @keyframes iris{
@@ -227,14 +269,16 @@
   .bloco img{
     width: 75%;
     border-radius: 2em;
+    margin-top: 3em;
   }
   
   .bloco p{
-    margin-bottom: 1.5em;
-    font-size: 1em;
+    
+    font-size: 1.6em;
   }
 
   .linkAppSite{
+    margin-top: 1.5vw;
     background: linear-gradient(
       90deg,
       #20b2aa,
@@ -270,7 +314,8 @@
     text-decoration: none;
     text-shadow: #000;
     color: #ff0000;
-    mix-blend-mode:multiply
+    mix-blend-mode:multiply;
+    font-size: 1.5rem;
   }
 
   @keyframes continuos {
@@ -393,7 +438,7 @@
     box-shadow: var(--sombraT) 0px var(--colorS) ;
     
     width: 15vw;
-    height: 20em;
+    height: 10em;
     
     align-items: center;
     text-align: left;
@@ -408,6 +453,9 @@
     animation-play-state: paused;
 
     padding: 5px;
+    font-size: 2rem;
+
+    overflow: hidden;
 
   } 
 
@@ -435,7 +483,7 @@
 
   #bloco1:hover, #bloco2:hover, #bloco3:hover{
     width: 17vw;
-    height: 22em;
+    height: 15em;
     text-align: center;
   }
 
@@ -524,6 +572,9 @@
   
 
 }
+.telas{
+  bottom: 3vh;
+}
 .logT{
   width: 25rem;
   margin-left: 29vw;
@@ -547,6 +598,7 @@
   width: 28vw;
   position: relative;
   left: 14vw;
+  bottom: 3vh;
   animation-duration: 1.8s;
   animation-name: direita;
   
@@ -574,11 +626,12 @@
 
 .TituTex{
   position: relative;
-  left: 19em;
+  left: 15em;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-size: 2rem;;
 }
 
 .TituTex li{
@@ -590,6 +643,7 @@ margin-right: 40px;
 .TituTex2{
   margin-left: 24vw;
   flex-direction: column;
+  font-size: 2rem;
 }
 .TituTex2 li{
 
@@ -598,7 +652,7 @@ margin-right: 40px;
 }
 
 #Download{
-  margin-left: 34vw;
+  margin-left: 39vw;
   flex-direction: column;
   overflow-y: hidden;
 }

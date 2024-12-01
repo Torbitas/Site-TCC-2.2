@@ -86,7 +86,7 @@
 }
 
 .footerM img{
-  z-index: 2;
+  z-index: 3;
   border: 5px solid black;
   border-radius: 50px;
   position: relative;
@@ -108,22 +108,44 @@
   background: linear-gradient(
     90deg,
     #b22020,
-    #8b0000,
+    #c01818,
     #eb8787,
     #ff0000,
     #ff1e1e,
     #ed6464,
-    #af0707
+    #d32020
   );
+  background-size:300% ;
   animation-duration: 5s;
   animation-name: linha;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
+
   
 }
 
-@keyframes linha {
 
+@keyframes linha {
+  0%{
+    background-position:0% 0%;
+  }
+  20%{
+    background-position:20% 0%;
+  }
+  40%{
+    background-position:40% 0%;
+  }
+  60%{
+    background-position:60% 0%;
+  }
+  80%{
+    background-position:80% 05;
+  }
+  100%{
+    background-position:100% 0%;
+  }
 }
+
 
 @keyframes iris{
   from{border-color: #00bfff;}
@@ -269,12 +291,12 @@
   .bloco img{
     width: 75%;
     border-radius: 2em;
-    margin-top: 3em;
+    margin-top: 1em;
   }
   
   .bloco p{
     
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
 
   .linkAppSite{
@@ -315,7 +337,7 @@
     text-shadow: #000;
     color: #ff0000;
     mix-blend-mode:multiply;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   @keyframes continuos {
@@ -453,7 +475,7 @@
     animation-play-state: paused;
 
     padding: 5px;
-    font-size: 2rem;
+    font-size: 1.3rem;
 
     overflow: hidden;
 
@@ -488,7 +510,7 @@
   }
 
   #bloco1:hover p, #bloco2:hover p, #bloco3:hover p{
-    font-size: 1.2em;
+    font-size: 1.5rem;
   }
 
   #bloco1:hover p::first-letter, #bloco2:hover p::first-letter, #bloco3:hover p::first-letter{
@@ -695,23 +717,27 @@ margin-right: 40px;
     
   }
   .linkAppSite{
-    width: 35vw;
-    height: 7vh;
+    width: 40vw;
+    height: 15vh;
     animation-play-state:running;
   }
 
   .linkAppSite:hover{
-    width: 35vw;
-    height: 7vh;
+    width: 40vw;
+    height: 15vh;
   }
   
   .blocosA{
-    width:35vw;
+    width:43vw;
     height:15em;
     margin-top:20px;
     margin-right: 45vw;
   }
   
+  .blocosA p{
+    font-size: 0.9em;
+  }
+
   #bloco1:hover, #bloco2:hover, #bloco3:hover{
     width:70vw;
     height:17em;
@@ -719,7 +745,7 @@ margin-right: 40px;
   }
 
   #bloco1:hover p, #bloco2:hover p, #bloco3:hover p{
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 
 
@@ -783,6 +809,17 @@ margin-right: 40px;
     
   }
       /*mindCard*/
+      .logo{
+        width: 190em;
+      }
+
+      #logF{
+        width: 10em;
+        left: -4.5rem;
+      }
+      .passa{
+        top:10vh
+      }
       #cel2{
         background:#ff0000;
  
@@ -805,21 +842,35 @@ margin-right: 40px;
       .TituTex{
         margin-left: 0vw;
         width: 50vw;
+        font-size: 1.2em;
+        left: 5vw;
  
+      }
+      .TituloM{
+        font-size: 1em;
       }
 
       .TituTex2{
         margin-left: 0vw;
         width: 50vw;
+        font-size: 1.2em;
+        position: relative;
+        left: -10vw;
  
+      }
+
+      .TituloM2{
+        font-size: 1em;
       }
       
       .telas{
-        width: 45vw;
+        width: 80vw;
         margin-left: 0;
+
       }
       .telas2{
-        width: 45vw;
+        width: 80vw;
+        left: -1rem;
       }
 
       .logT{

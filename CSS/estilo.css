@@ -626,6 +626,10 @@
   
 }
 
+.traz::before{
+  content: "- ";
+}
+
 @keyframes direita {
   from {
     transform:translateX(-450vw);
@@ -842,7 +846,7 @@ margin-right: 40px;
       .TituTex{
         margin-left: 0vw;
         width: 50vw;
-        font-size: 1.2em;
+        font-size: 0.9812em;
         left: 5vw;
  
       }
@@ -853,10 +857,13 @@ margin-right: 40px;
       .TituTex2{
         margin-left: 0vw;
         width: 50vw;
-        font-size: 1.2em;
+        font-size: 0.9812em;
         position: relative;
         left: -10vw;
- 
+      }
+
+      .traz::before{
+        content: "";
       }
 
       .TituloM2{

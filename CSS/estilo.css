@@ -904,11 +904,15 @@ margin-right: 40px;
         margin: auto;
       }
       #Download{
-        margin-left: 10vw;
+        left: 16vw;
 
       }
       #carinha{
         margin-top: 2vh;
         font-size: 8em;
+      }
+      #estilize{
+        left: -12vw;
+
       }
 }

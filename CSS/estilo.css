@@ -688,7 +688,7 @@ margin-right: 40px;
 
 #Download{
   position: relative;
-  left: 38vw;
+  left: 41vw;
   padding-top: 2vh;
   flex-direction: column;
   overflow-y: hidden;
@@ -904,8 +904,7 @@ margin-right: 40px;
         margin: auto;
       }
       #Download{
-        left: 16vw;
-
+        left: 18vw;
       }
       #carinha{
         margin-top: 2vh;
